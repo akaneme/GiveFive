@@ -1,0 +1,14 @@
+{
+  "name": "GiveFive",
+  "short_name": "GiveFive",
+  "description": "5 minutes. Real impact. Micro-volunteering, one swipe at a time.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#EAEFE4",
+  "theme_color": "#1F4E44",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
