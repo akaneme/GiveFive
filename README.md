@@ -1,64 +1,70 @@
 # GiveFive
 
-Swipe-based micro-volunteering app. Give 5 minutes, not 5 hours.
+Micro-volunteering, one swipe at a time.
 
-Built for KatyYouthHacks 2026 — Tech for Humanity.
+GiveFive turns volunteering into 5-minute tasks instead of hour-long commitments — proofread a paragraph, explain a confusing form, do a quick practice interview, or just keep someone company on a call. Swipe right to commit, swipe left to pass.
 
-## File structure
+## Features
 
-```
-givefive/
-├── index.html          # HTML entry point (loads src/main.jsx)
-├── package.json        # dependencies + scripts
-├── vite.config.js       # Vite + React plugin config
-├── .gitignore
-├── README.md
-└── src/
-    ├── main.jsx         # React root, renders <App />
-    └── App.jsx          # the whole GiveFive app (deck, tabs, state)
-```
+- Swipeable task deck (drag or tap buttons)
+- Filter tasks by category
+- Undo your last swipe
+- Track commitments and mark them done
+- Impact dashboard — minutes given, people helped, streak, badges
+- Installable as a home-screen app (PWA)
 
-## Run it locally
+## Tech stack
 
-You need [Node.js](https://nodejs.org) (v18 or newer) installed.
+React + Vite, [lucide-react](https://lucide.dev) for icons. No backend — all state is in-memory for this MVP.
+
+## Getting started
+
+Requires [Node.js](https://nodejs.org) v18+ installed.
 
 ```bash
-# 1. install dependencies
+# 1. clone the repository
+git clone https://github.com/<your-username>/<your-repo>.git
+
+# 2. move into the project folder
+cd GiveFive
+
+# 3. install dependencies
 npm install
 
-# 2. start the dev server
+# 4. start the dev server
 npm run dev
 ```
 
-Then open the URL it prints (usually `http://localhost:5173`) in your browser.
+Open the URL it prints in your terminal (usually `http://localhost:5173`) in your browser.
 
-To build a production version:
+To build a production version instead:
 
 ```bash
 npm run build
 npm run preview
 ```
 
-## Install it like a real app (for your demo video)
+## Install as an app
 
-The app is a PWA, so on an actual phone it can be added to the home screen and opens with no browser bar — great for filming.
+On a phone, open the running site and:
 
-- **Android (Chrome):** open the site → menu (⋮) → "Add to Home Screen" / "Install app"
-- **iPhone (Safari):** open the site → Share icon → "Add to Home Screen"
+- **Android/Chrome:** menu (⋮) → "Add to Home Screen" / "Install app"
+- **iPhone/Safari:** Share icon → "Add to Home Screen"
 
-On desktop browsers the app shows as a bezeled phone card so it still looks intentional; on an actual phone screen it fills the whole display edge-to-edge like a normal app.
+It'll launch full-screen with its own icon, no browser bar.
 
-## Push to GitHub
+## File structure
 
-From inside the `givefive` folder:
-
-```bash
-git init
-git add .
-git commit -m "Initial commit: GiveFive MVP"
-git branch -M main
-git remote add origin https://github.com/<your-username>/<your-repo>.git
-git push -u origin main
 ```
-
-(Create the empty repo on GitHub first, then swap in its URL above.)
+givefive/
+├── index.html
+├── package.json
+├── vite.config.js
+├── public/
+│   ├── manifest.json
+│   ├── sw.js
+│   └── icon files
+└── src/
+    ├── main.jsx
+    └── App.jsx
+```
