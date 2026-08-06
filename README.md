@@ -71,5 +71,4 @@ givefive/
 ## Demo
 Watch the mini demo recording
 
-https://github.com/user-attachments/assets/6b1dd6f8-2ebe-4de7-986a-10ad4d24c7a6
-
+https://github.com/user-attachments/assets/e6677b5b-5b9d-4bf5-8b9a-7c6ae6666071
