@@ -4,10 +4,6 @@ Micro-volunteering, one swipe at a time.
 GiveFive turns volunteering into 5-minute tasks instead of hour-long commitments — proofread a paragraph, explain a confusing form, do a quick practice interview, or just keep someone company on a call. Swipe right to commit, swipe left to pass.
 
 
-## Demo
-
-[▶ Watch the mini demo recording](demo/recording.mp4)
-
 ## Features
 - Swipeable task deck (drag or tap buttons)
 - Filter tasks by category
@@ -71,3 +67,9 @@ givefive/
     ├── main.jsx
     └── App.jsx
 ```
+
+## Demo
+Watch the mini demo recording
+
+https://github.com/user-attachments/assets/6b1dd6f8-2ebe-4de7-986a-10ad4d24c7a6
+
