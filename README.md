@@ -56,7 +56,12 @@ It'll launch full-screen with its own icon, no browser bar.
 ## File structure
 
 ```
+```
 givefive/
+├── demo/
+│   ├── discover-screen.png
+│   ├── commitments-tab.png
+│   └── impact-dashboard.png
 ├── index.html
 ├── package.json
 ├── vite.config.js
@@ -67,4 +72,5 @@ givefive/
 └── src/
     ├── main.jsx
     └── App.jsx
+```
 ```
